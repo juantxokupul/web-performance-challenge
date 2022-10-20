@@ -14,4 +14,13 @@
 
 .footer__link {
   margin-right: 20px;
+  color: var(--text-color);
+}
+
+.footer__sponsor a {
+  color: #bbb;
+}
+
+.footer__sponsor a:hover {
+  color: #fff;
 }
