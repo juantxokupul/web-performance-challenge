@@ -31,7 +31,7 @@ const dynamicContent = () => {
 };
 
 const initApp = () => {
-  lazyLoad();
+  // lazyLoad();
   dynamicContent();
 };
 

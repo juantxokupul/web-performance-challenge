@@ -1,60 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="http://slowfil.es/file?type=css&delay=1000&sync-in-head" />
-  <script src="https://slowfil.es/file?type=js&delay=1500&sync-in-head&01"></script>
-  <link rel="stylesheet" href="styles/index.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    var script = document.createElement('script');
-    script.src = "https://slowfil.es/file?type=js&delay=1000&async-snippet-in-head";
-    document.head.appendChild(script);
-  </script>
-  <input type="hidden" id="csrf_token" value="ZGlkIHlvdSBmaW5kIG1lPwo=" />
-  <script src="https://slowfil.es/file?type=js&delay=1000&sync-in-head&02"></script>
-  <link rel="preload" href="background.jpg" as="image">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/" />
+  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/" crossorigin />
+  <link rel="preconnect" href="https://meyerweb.com/" />
+  <link rel="preconnect" href="https://meyerweb.com/" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <script>
-    // advertisment mock
-    const initAd = () => {
-      const adSpace = document.querySelector('.main__advertising');
-      const gif = '<div style="width:400px;max-width:100%;"><div style="height:0;padding-bottom:52.4%;position:relative;"><iframe width="500" height="262" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/6wy03z"></iframe></div></div>';
-      setTimeout(() => adSpace.innerHTML = gif, 3000);
-    };
-    // Slow JS
-    function wait(ms) {
-      var start = Date.now(),
-      now = start;
-      while (now - start < ms) {
-        now = Date.now();
-      }
-    };
-    // anti flicker
-    document.body.style.visibility = 'hidden';
-
-    wait(1000);
-    window.addEventListener('load', () => {
-      document.body.removeAttribute('style');
-      initAd();
-    });
-    // antiflicker();
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="styles/styles.min.css" />
   <title>The Rum Diary</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 </head>
 <body>
+  
   <header class="header__base">
     <div class="header__content">
       <a class="header__logo" href="#">
-        <img class="header__image" src="./logo.png">
+        <img class="header__image" src="./logo.svg">
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list">
@@ -79,7 +46,10 @@
   </header>
 
   <main class="main__base">
-    <section class="main__advertising"></section>
+    <section class="main__advertising">
+      <input type="hidden" id="csrf_token" value="ZGlkIHlvdSBmaW5kIG1lPwo=" />
+      <div style="width:400px;max-width:100%;"><div style="height:0;padding-bottom:52.4%;position:relative;"><iframe width="500" height="262" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/6wy03z"></iframe></div></div>
+    </section>
 
     <section class="main__content">
       <section class="main__news main__section">
@@ -90,17 +60,17 @@
       
       <section class="main__hero main__section">
         <a href="https://www.google.com/maps/search/Local+restaurants/@42.3431763,-3.704175,15z/data=!3m1!4b1" class="hero__carousel div1 swiper">
-          <img data-src="https://images.unsplash.com/flagged/photo-1579632993381-847f6a71a3cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="Young woman eating mexican food" class="hero__img">
+          <img src="images/bite.webp" alt="Young woman eating mexican food" class="hero__img">
           <div class="swiper-text">Local restaurants finally optimising time to first bite</div>
         </a>
         
         <a href="https://theluxurytravelexpert.com/2021/07/12/top-10-spectacular-waterfalls/" class="hero__teaser div2">
-          <img data-src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=400&q=100" alt="Nice waterfall" class="hero__img">
+          <img src="images/waterfalls.webp" alt="Nice waterfall" class="hero__img">
           <div class="hero__teaserText">Top 10 waterfalls to analyse this week</div>
         </a>
 
         <a href="https://www.searchenginejournal.com/website-bounce-rate/332439/" class="hero__teaser div3">
-          <img data-src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&h=1528" alt="Little girl jumping on elastic bed" class="hero__img">
+          <img src="images/bouncing.webp" alt="Little girl jumping on elastic bed" class="hero__img">
           <div class="hero__teaserText">Bouncing rates increased signifincantly last week</div>
         </a>
       </section>
@@ -109,19 +79,19 @@
         <article class="teaser__base">
           <img class="teaser__image" src="https://images.unsplash.com/photo-1631857455684-a54a2f03665f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="Succulent deserts" class="card__img"><hr>
           <h1 class="teaser__title">First Party</h1>
-          <div class="teaser__text"></div>
+          <div class="teaser__text">This is an article about first party that happened this weekend</div>
           <button class="teaser__link">Read more</button>
         </article>
         <article class="teaser__base">
           <img class="teaser__image" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="Young people toasting" class="card__img"><hr>
           <h1 class="teaser__title">Second Party</h1>
-          <div class="teaser__text"></div>
+          <div class="teaser__text">This is an article about second party that happened this weekend</div>
           <button class="teaser__link">Read more</button>
         </article>
         <article class="teaser__base">
           <img class="teaser__image" src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100" alt="Colored powder party" class="card__img"><hr>
           <h1 class="teaser__title">Third Party</h1>
-          <div class="teaser__text"></div>
+          <div class="teaser__text">This is an article about third party that happened this weekend</div>
           <button class="teaser__link">Read more</button>
         </article>
       </section>
@@ -134,7 +104,7 @@
       </section>
       
       <section class="main__video main__section">
-        <iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&autoplay=1&loop=1&byline=0&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&loop=1&byline=0&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         <form class="form__base">
           <div class="form__intro">Something about lighthouses, describing point of the video we are putting here to prove how awesome they really are, no.</div>
           <div class="from__control">
@@ -167,6 +137,5 @@
       <div class="footer__sponsor">Powered by <a href="https://www.netcentric.biz/">Cognizant Netcentric</a></div>
     </section>
   </footer>
-  <script src="script/app.js"></script>
 </body>
 </html>
